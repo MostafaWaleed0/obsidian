@@ -1,0 +1,12 @@
+export { default as Cup } from './Cup';
+export { default as List } from './List';
+export { default as LogoIcon } from './Logo';
+export { default as Star } from './Star';
+export { default as Hero } from './Hero';
+export { default as Backend } from './Backend';
+export { default as Twitter } from './Twitter';
+export { default as Frontend } from './Frontend';
+export { default as Facebook } from './Facebook';
+export { default as Instagram } from './Instagram';
+export { default as UIUXDesign } from './UIUXDesign';
+export { default as GraphicDesign } from './GraphicDesign';
