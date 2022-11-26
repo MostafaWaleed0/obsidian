@@ -120,16 +120,19 @@ export default function Home() {
                 title="training courses"
                 description="The gradual accumulation of information about"
                 image="/images/lamp.png"
+                alt="Illustration of Desk Lamp"
               />
               <EducationItem
                 title="books liberary"
                 description="The gradual accumulation of information about"
                 image="/images/book.png"
+                alt="Illustration of Books"
               />
               <EducationItem
                 title="market analysis"
                 description="The gradual accumulation of information about"
                 image="/images/Frame-212.png"
+                alt="Illustration of Up Arrow"
               />
             </ul>
           </div>
