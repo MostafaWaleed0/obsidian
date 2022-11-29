@@ -152,7 +152,7 @@ export default function Home() {
               icon={<GraphicDesign />}
             />
             <CourseCard
-              title="back-end programming"
+              title="back-end development"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
               href="/blog/backend-development"
               icon={<Backend />}
@@ -164,7 +164,7 @@ export default function Home() {
               icon={<UIUXDesign />}
             />
             <CourseCard
-              title="Front-end programming"
+              title="Front-end development"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
               href="/blog/frontend-development"
               icon={<Frontend />}
