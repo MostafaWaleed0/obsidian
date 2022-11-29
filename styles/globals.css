@@ -33,3 +33,27 @@
     @apply max-w-[47ch] text-xl text-gray-500 dark:text-slate-500;
   }
 }
+
+.prose :is(p, strong, em, li, figcaption, blockquote) {
+  @apply max-w-prose;
+}
+
+.prose :is(h1, h2, h3) {
+  @apply min-w-full mt-20;
+}
+
+.prose :is(h2 + ol, h3 + ul) > li + li {
+  @apply space-y-3;
+}
+
+.prose :is(h2 + p, h3 + p, h2 + ul, h3 + ul) {
+  @apply mt-5;
+}
+
+.prose :is(h4 + p, h4 + ul) {
+  @apply mt-4;
+}
+
+.prose :is(h2 + h3) {
+  @apply mt-7;
+}

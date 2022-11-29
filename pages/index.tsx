@@ -148,25 +148,25 @@ export default function Home() {
             <CourseCard
               title="graphic design"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              href="/"
+              href="/blog/graphic-design"
               icon={<GraphicDesign />}
             />
             <CourseCard
               title="back-end programming"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              href="/"
+              href="/blog/backend-development"
               icon={<Backend />}
             />
             <CourseCard
               title="UI UX design"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              href="/"
+              href="/blog/ui-ux-design"
               icon={<UIUXDesign />}
             />
             <CourseCard
               title="Front-end programming"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              href="/"
+              href="/blog/frontend-development"
               icon={<Frontend />}
             />
           </ol>
