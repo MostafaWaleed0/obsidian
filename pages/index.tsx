@@ -29,7 +29,7 @@ const FormView = dynamic(() => import('components/form/FormView'), {
 });
 
 export default function Home() {
-  const ref = useRef();
+  const ref = useRef<any>();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
