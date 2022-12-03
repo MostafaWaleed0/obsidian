@@ -11,8 +11,6 @@
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@next/font": "^13.0.4",
-    "@shopify/shopify-api": "^5.2.0",
-    "@tailwindcss/typography": "^0.5.8",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
@@ -22,7 +20,6 @@
     "next": "13.0.4",
     "next-mdx-remote": "^4.2.0",
     "next-themes": "^0.2.1",
-    "node-fetch": "^3.3.0",
     "react": "18.2.0",
     "react-countup": "^6.3.2",
     "react-dom": "18.2.0",
