@@ -55,7 +55,7 @@ export default function Home() {
               one's humanity, of refining one's sense of self. It is the life of
               the mind.
             </p>
-            <Button type="link" href="/shop">
+            <Button type="link" href="/">
               join us
             </Button>
           </div>
