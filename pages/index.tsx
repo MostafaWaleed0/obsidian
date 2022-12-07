@@ -123,7 +123,7 @@ export default function Home() {
                 alt="Illustration of Desk Lamp"
               />
               <EducationItem
-                title="books liberary"
+                title="books library"
                 description="The gradual accumulation of information about"
                 image="/images/book.png"
                 alt="Illustration of Books"
