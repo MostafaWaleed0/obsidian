@@ -10,7 +10,7 @@ import FormView from 'components/form';
 export default function BlogPost({ frontmatter, content }) {
   return (
     <Container
-      title={'Obsidian - ' + frontmatter.title}
+      title={`Obsidian - ${frontmatter.title}`}
       description={frontmatter?.description}
     >
       <article className="container my-40">
@@ -45,7 +45,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = readFileSync(
-    join(process.cwd(), 'posts', slug + '.md'),
+    join(process.cwd(), 'posts', `${slug}.md`),
     'utf-8'
   );
 
