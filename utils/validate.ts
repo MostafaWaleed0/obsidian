@@ -1,3 +1,15 @@
+const checkValues = (value: string) => {
+  return !value || value.trim() === '';
+};
+
+const checkLength = (value: string, length?: number) => {
+  return value.length > (length || 1000);
+};
+
+const validateValues = (reg: RegExp, value: string) => {
+  return !reg.test(value);
+};
+
 export const validate = ({
   email,
   subject,
@@ -13,19 +25,21 @@ export const validate = ({
     body?: string;
   } = {};
 
-  if (!email || email.trim() === '') {
+  if (checkValues(email)) {
     errors.email = 'Email is required';
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
+  } else if (
+    validateValues(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i, email)
+  ) {
     errors.email = 'Invalid email address';
   }
 
-  if (!subject || subject.trim() === '') {
+  if (checkValues(subject)) {
     errors.subject = 'subject is required';
   }
 
-  if (!body || body.trim() === '') {
+  if (checkValues(body)) {
     errors.body = 'Body is required';
-  } else if (body.length > 1000) {
+  } else if (checkLength(body)) {
     errors.body = "Your details can't be more than 1000 characters";
   }
 
