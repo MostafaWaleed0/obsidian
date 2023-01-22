@@ -2,11 +2,10 @@ import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 import { mdToHtml } from 'lib/md';
-import dynamic from 'next/dynamic';
 import { MDXRemote } from 'next-mdx-remote';
 import { Container } from 'components/common';
 import components from 'components/MDXComponents';
-const Form = dynamic(() => import('components/form/FormView'), { ssr: false });
+import FormView from 'components/form';
 
 export default function BlogPost({ frontmatter, content }) {
   return (
@@ -27,7 +26,7 @@ export default function BlogPost({ frontmatter, content }) {
           </div>
           <hr className="my-10" />
           <div>
-            <Form />
+            <FormView />
           </div>
         </div>
       </article>

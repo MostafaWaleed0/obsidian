@@ -10,23 +10,11 @@ import {
 } from 'components/icons';
 import { Button } from 'components/ui';
 import CountUp from 'react-countup';
-import dynamic from 'next/dynamic';
-
-const CourseCard = dynamic(() => import('components/CourseCard'), {
-  ssr: false
-});
-const CustomerCard = dynamic(() => import('components/CustomerCard'), {
-  ssr: false
-});
-const EducationItem = dynamic(() => import('components/EducationItem'), {
-  ssr: false
-});
-const Headline = dynamic(() => import('components/Headline'), {
-  ssr: false
-});
-const FormView = dynamic(() => import('components/form/FormView'), {
-  ssr: false
-});
+import CourseCard from 'components/CourseCard';
+import EducationItem from 'components/EducationItem';
+import Headline from 'components/Headline';
+import FormView from 'components/form';
+import CustomerCard from 'components/CustomerCard';
 
 export default function Home() {
   const ref = useRef<any>();
