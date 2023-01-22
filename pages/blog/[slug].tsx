@@ -1,13 +1,17 @@
+import { Container } from 'components/common';
+import FormView from 'components/form';
+import components from 'components/MDXComponents';
 import { readdirSync, readFileSync } from 'fs';
-import { join } from 'path';
 import matter from 'gray-matter';
 import { mdToHtml } from 'lib/md';
+import { InferGetStaticPropsType } from 'next';
 import { MDXRemote } from 'next-mdx-remote';
-import { Container } from 'components/common';
-import components from 'components/MDXComponents';
-import FormView from 'components/form';
+import { join } from 'path';
 
-export default function BlogPost({ frontmatter, content }) {
+export default function BlogPost({
+  frontmatter,
+  content
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Container
       title={`Obsidian - ${frontmatter.title}`}
