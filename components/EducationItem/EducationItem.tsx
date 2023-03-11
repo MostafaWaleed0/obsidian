@@ -26,7 +26,7 @@ export default function CustomerCard({
           />
           <h3 className="text-4xl">{title}</h3>
         </div>
-        <p className="text-2xl lg:text-5xl leading-tight text-center lg:text-start">
+        <p className="text-2xl lg:text-5xl leading-relaxed text-center lg:text-start">
           {description}
         </p>
       </article>
