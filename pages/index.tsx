@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </section>
       <section className="py-20 md:py-28 bg-gray-100 dark:bg-gray-800 rounded-2xl relative">
-        <div className="absolute -top-28 right-0 md:right-auto md:left-0 -rotate-12">
+        <div className="absolute -top-28 right-5 md:right-auto md:left-0 -rotate-12">
           <Cup className="animate-[wiggle_1s_ease-in-out_infinite] w-36 h-36 md:w-48 md:h-48" />
         </div>
         <div className="container flex justify-between items-center gap-5 flex-col-reverse lg:flex-row">
