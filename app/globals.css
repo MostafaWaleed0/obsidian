@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  [id] {
+    @apply scroll-mt-24;
+  }
+
+  body {
+    @apply min-h-screen text-black dark:text-white;
+  }
+
+  :focus-visible {
+    @apply outline-offset-8 outline-white;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-black dark:text-white font-medium capitalize;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl max-w-[16ch];
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  p {
+    @apply max-w-[47ch] text-xl text-gray-500 dark:text-slate-500;
+  }
+}
+
+.prose :is(p, strong, em, li, figcaption, blockquote) {
+  @apply max-w-prose;
+}
+
+.prose :is(h1, h2, h3) {
+  @apply min-w-full mt-20;
+}
+
+.prose :is(h2 + p, h3 + p) {
+  @apply mt-5;
+}
