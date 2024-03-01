@@ -51,7 +51,7 @@ export function Header() {
                 {Object.entries(navItems).map(([path, { name }]) => {
                   return (
                     <li className="md:mx-3" key={name}>
-                      <Link href={`#${path}`}>{name}</Link>
+                      <Link href={`/#${path}`}>{name}</Link>
                     </li>
                   );
                 })}
